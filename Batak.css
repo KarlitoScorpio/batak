@@ -1,0 +1,535 @@
+body{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hex1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 420px;
+    height: 420px;
+    background: black;
+}
+
+.hex2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 400px;
+    height: 400px;
+    background: white;
+}
+
+.hex_buttons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    height: 420px;
+    z-index: 10;
+    overflow: visible;
+}
+
+.button1{
+    position: absolute;
+    top: -6%;
+    left: 16%;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.button2{
+    position: absolute;
+    top: -6%;
+    right: 16%;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.button3{
+    position: absolute;
+    top: 42.5%;
+    left: -6%;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.button4{
+    position: absolute;
+    top: 42.5%;
+    right: -6%;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    z-index: 10;
+}
+.button5{
+    position: absolute;
+    bottom: -6%;
+    left: 16%;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.button6{
+    position: absolute;
+    bottom: -6%;
+    right: 16%;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.time_txt{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    margin: 0;
+}
+
+.time{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    margin: 0;
+}
+
+.clicks_txt{
+    position: absolute;
+    bottom: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    margin: 0;
+}
+
+.clicks{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    margin: 0;
+}
+
+h1{
+    position: absolute;
+    top: -1%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer{
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+}
+
+.div_buttons{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 230px;
+    height: 50px;
+    display: flex;
+}
+
+.start_button{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 110px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.start_button:hover{
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+
+.reset_button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    width: 110px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.reset_button:hover{
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+
+.div_table{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 375px;
+}
+
+.table_heading{
+    text-align: center;
+    font-size: 20px;
+}
+
+.table_data{
+    height: auto;
+    width: 375px;
+    overflow: hidden;
+    margin: 0;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th{
+    border-bottom: 1px solid black;
+}
+
+#place, #score, .table_data td:nth-child(1), .table_data td:nth-child(3){
+    width: 100px;
+}
+
+#name, .table_data td:nth-child(2){
+    width: 175px;
+}
+
+.table tr:nth-child(1){
+    background-color: gold;
+}
+
+.table tr:nth-child(2){
+    background-color: silver;
+}
+
+.table tr:nth-child(3){
+    background-color: orange;
+}
+
+.eng{
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    background-color: white;
+    border: none;
+}
+
+.eng:hover{
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.eng1{
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.hr{
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    background-color: white;
+    border: none;
+}
+
+.hr:hover{
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.hr1{
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.description_div{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 400px;
+    text-align: justify;
+}
+
+.description_heading{
+    text-align: center;
+    font-size: 20px;
+}
+
+.player_name{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    border: 2px solid black;
+    text-align: center;
+    width: 215px;
+    height: 20px;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    50.01%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    body{
+        height: 2600px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    h1{
+        position: absolute;
+        top: 6%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 250px;
+    }
+
+    .eng{
+        right: 10%;
+    }
+
+    .eng1{
+        right: 10%;
+    }
+
+    .description_div{
+        left: 50%;
+        transform: translateX(-52%);
+        top: 170px;
+        width: 100%;
+        height: 688px;
+    }
+
+    .center_div{
+        position: absolute;
+        top: 860px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 920px;
+        width: 100%;
+    }
+
+    .description_heading{
+        text-align: unset;
+        position: absolute;
+        top: -6%;
+        left: 50%;
+        transform: translateX(-42%);
+    }
+
+    .div_table{
+        left: 0%;
+        top: 1800px;
+        height: 715px;
+    }
+
+    .table_overflow{
+        height: 626px;
+        overflow: hidden;
+    }
+
+    .table_heading{
+        text-align: unset;
+        position: absolute;
+        top: -6%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    th, td{
+        width: 33.3vw;
+    }
+
+    .footer{
+        top: 2560px;
+    }
+    
+    .hex1{
+        width: 350px;
+        height: 350px;
+    }
+
+    .hex2{
+        width: 330px;
+        height: 330px;
+    }
+
+    .hex_buttons{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 350px;
+        z-index: 10;
+        overflow: visible;
+    }
+
+    .button1{
+        position: absolute;
+        top: -6%;
+        left: 18%;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .button2{
+        position: absolute;
+        top: -6%;
+        right: 18%;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .button3{
+        position: absolute;
+        top: 41.5%;
+        left: -4%;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .button4{
+        position: absolute;
+        top: 41.5%;
+        right: -4%;
+        width: 60px;
+        height: 60px;
+    }
+    .button5{
+        position: absolute;
+        bottom: -6%;
+        left: 18%;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .button6{
+        position: absolute;
+        bottom: -6%;
+        right: 18%;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .time_txt{
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .clicks_txt{
+        position: absolute;
+        bottom: 22%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .time{
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .clicks{
+        position: absolute;
+        bottom: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .div_buttons{
+      top:43%;
+    }
+}
+
+@media screen and (max-height: 800px){
+    .table_overflow{
+        height: 469px;
+    }
+}
