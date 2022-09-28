@@ -984,7 +984,7 @@ function start(){
 
     start_btn.disabled = true;
 
-    var seconds = 1;
+    var seconds = 60;
 
     interval = setInterval(function(){
         seconds--
